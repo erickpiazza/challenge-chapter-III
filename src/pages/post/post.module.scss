@@ -1,1 +1,61 @@
-// TODO
+.banner {
+  width: 100%;
+}
+
+.post {
+  padding: 80px 0;
+  max-width: 720px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  div.postInfo {
+    width: 100%;
+    margin: 0 auto 4rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    align-items: center;
+
+    time,
+    span {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gray-400);
+    }
+  }
+
+  section {
+    width: 100%;
+
+    p,
+    li {
+      font-size: 1.125rem;
+      line-height: 140%;
+      color: var(--gray-400);
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: var(--pink-500);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    & + section {
+      margin-top: 3rem;
+    }
+  }
+}
